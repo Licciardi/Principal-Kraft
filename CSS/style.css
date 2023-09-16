@@ -124,7 +124,18 @@ video{
       color: white;
       border: solid 2px;
       padding: 10px;
+      margin-left: 50px;
     }
+
+    .carde:hover {
+      transform: scale(1.1);
+      transition: .3s;
+    }
+
+    .carde:not(:hover) {
+    transform: scale(1); /* Reverte a transformação quando o mouse sai */
+   transition: .3s;
+   }
 
     .card-icon {
       font-size: 48px;
@@ -176,8 +187,9 @@ video{
     }
 
     video{
-        width: 100%;
+        width: 130%;
         height: 100%;
     }
 
+    .carde{ margin: 0;}
 }
