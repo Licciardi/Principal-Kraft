@@ -33,7 +33,7 @@ main{
 
 .bg-color {
     width: 100%;
-    min-height: 70vh;
+    min-height: 60vh;
 }
 
 .bg-main{
@@ -191,7 +191,7 @@ video{
             align-items: center;
             padding: 30px;
             border: solid #1c3c6d;
-            background-color: #87b7ff34;
+            background-color: #97bdf54a;
             border-radius: 5px;
             min-height: 400px;
             box-shadow: 6px 6px #1c3c6d84;
@@ -207,6 +207,10 @@ video{
             margin-bottom: 10px;
         }
 
+        .nome-usuario{
+          font-weight: 700;
+          
+        }
 
 
 ::-webkit-scrollbar {
