@@ -174,7 +174,8 @@ video{
 
     .star {
       color: #f0c419;
-      font-size: 24px;
+      font-size: 18px;
+      margin-left: 3px;
     }
 
     .card-subtitle {
@@ -183,6 +184,28 @@ video{
       margin-bottom: 10px;
     }
 
+
+    .depoimento {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+            border: solid #1c3c6d;
+            background-color: #87b7ff34;
+            border-radius: 5px;
+            min-height: 400px;
+            box-shadow: 6px 6px #1c3c6d84;
+        }
+
+        /* Estilos da foto do usuário */
+        .foto-usuario {
+            width: 100px;
+            height: 100px;
+            border: solid 2px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
 
 
 
