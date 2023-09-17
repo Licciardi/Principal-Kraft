@@ -27,19 +27,23 @@ main{
 
 .bg-teste {
     background-color: var(--color-hover-red);
-    background-repeat: repeat;
-    background-size: cover;
-    background-attachment: fixed;
     width: 100%;
-    min-height: 50vh;
+    min-height: 70vh;
+}
+
+.bg-color {
+    width: 100%;
+    min-height: 70vh;
 }
 
 .bg-main{
-    background-color: #fffaf4;
+     background-color: #fffaf4;
       width: 100%;
       min-height: 80vh;
       
 }
+
+
 
 .transparent-background {
     background: rgba(0, 0, 0, 0.5); /* Altere o último valor (0.5) para ajustar a transparência. */
@@ -70,23 +74,21 @@ main{
 
 .button{
     text-decoration: none;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 13px;
-    background-color: var(--color-hover-red); /* Cor de fundo do botão */
+    background-color: var(--color-hover-blue); /* Cor de fundo do botão */
     color: #fff !important; /* Cor do texto do botão */
-    transition: background-color 0.9s ease; /* Transição suave da cor de fundo */
+    transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
     user-select: none;
 }
 
 
 .button:hover {
-    background-color: var(--color-hover-blue); /* Nova cor de fundo no hover */
+    background-color: var(--color-hover-red); /* Nova cor de fundo no hover */
     color: #fff  !important;
-    border: solid 1px;
-    border-color: var(--color-hover-blue) ;
     cursor: pointer;
     
 }
@@ -102,6 +104,11 @@ video{
       height: 2px;
       background-color: white;
     }
+    .linha-preta {
+      width: 100%;
+      height: 2px;
+      background-color: var(--color-hover-blue);
+    }
 
 
 .titulo-sobreposto {
@@ -115,6 +122,18 @@ video{
       padding-right: 22px;
     }
 
+    .titulo-sobreposto-preto {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: var(--color-hover-blue);
+      background-color: #fffaf4;
+      padding-left: 22px;
+      padding-right: 22px;
+    }
+
+
 
 /* -- Incio De card----*/
 
@@ -124,7 +143,8 @@ video{
       color: white;
       border: solid 2px;
       padding: 10px;
-      margin-left: 50px;
+      margin-left: 30px;
+      border-radius: 12px;
     }
 
     .carde:hover {
@@ -187,9 +207,17 @@ video{
     }
 
     video{
-        width: 90%;
+        width: 98%;
         height: 100%;
     }
 
-    .carde{ margin: 0;}
+   .carde {
+     margin: 0;
+      text-align: center;
+      background-color: transparent;
+      color: white;
+      border: solid 2px;
+      padding: 10px;
+      border-radius: 12px;
+    }
 }
