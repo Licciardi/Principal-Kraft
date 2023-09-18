@@ -1,28 +1,37 @@
-const popup = document.getElementById("pop-up");
-const popup1 = document.querySelector("#pop-up-1"); 
-const popup2 = document.getElementById("popup2");
-const open = document.getElementById("open-popup-btn");
-const close = document.getElementById("close")
+const exampleModal = document.getElementById('exampleModal')
+if (exampleModal) {
+  exampleModal.addEventListener('show.bs.modal', event => {
+    // Button that triggered the modal
+    const button = event.relatedTarget
+    // Extract info from data-bs-* attributes
+    const recipient = button.getAttribute('data-bs-whatever')
+    // If necessary, you could initiate an Ajax request here
+    // and then do the updating in a callback.
 
-open.addEventListener("click",()=>{
-    popup1.classList.remove("none");
-    popup1.classList.add("pop-up-1");
-    open.classList.add("none");
-    popup.classList.add("pop-up");
-})
+    // Update the modal's content.
+    const modalTitle = exampleModal.querySelector('.modal-title')
+    const modalBodyInput = exampleModal.querySelector('.modal-body input')
 
-close.addEventListener("click",()=>{
-    popup1.classList.add("none");
-    popup1.classList.remove("pop-up-1");
-    open.classList.remove("none");
-    popup.classList.remove("pop-up");
-})
-
-function openPopup(){
-    popup2.classList.add("open-popup")
+    modalTitle.textContent = `Compartilhe sua satifação`
+    modalBodyInput.value = recipient
+  })
 }
 
-function closePopup(){
-    popup2.classList.remove("open-popup")
-}
+const exampleModal2 = document.getElementById('exampleModal2')
+if (exampleModal2) {
+  exampleModal2.addEventListener('show.bs.modal', event => {
+    // Button that triggered the modal
+    const button2 = event.relatedTarget
+    // Extract info from data-bs-* attributes
+    const recipient2 = button2.getAttribute('data-bs-whatever')
+    // If necessary, you could initiate an Ajax request here
+    // and then do the updating in a callback.
 
+    // Update the modal's content.
+    const modalTitle2 = exampleModal.querySelector('.modal-title-2')
+    const modalBodyInput2 = exampleModal.querySelector('.modal-body-2 input')
+
+    modalTitle2.textContent = `Compartilhe sua sugestão`
+    modalBodyInput2.value = recipient2
+  })
+}

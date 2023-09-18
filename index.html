@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <!-- Link FontAWESOME  -->
     <script src="https://kit.fontawesome.com/003f4742cc.js"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous" defer></script>
 </head>
 <body class="">
     <!-- Inicio do Header -->
@@ -164,71 +164,94 @@
                         <div class="col-8 mx-auto position-relative mt-5  ">
                             <h3 class="titulo-sobreposto-preto">Deixe seu
                                 Feedback</h3>
-                            <!-- A linha branca centralizada -->
+                            
                             <div class="linha-preta"></div>
-                            <!-- Título sobreposto -->
+                            
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="d-flex align-itens-center justify-content-center" id="pop-up">
-                <div class="none" id="pop-up-1">
-                    <div class="d-flex align-items-start justify-content-start" style="width: 100%;">
-                        <button id="close">X</button>
-                    </div>
-                    <div class="first-title">Compartilhe sua sugestão</div>
-            
-                    <div class="popup-image">
-                        <img src="img/246701118_1555153184830777_6019986819731785548_n.png">
-                    </div>
-            
-                    <div class="descripton">
-            
-                        <div class="title">Selecione a Categoria:</div>
-            
-                        <form action="">
-                            <div class="radio-group">
-                                <label class="radio-item" required>
-                                    <input type="radio" name="assunto" value="produto" required>
-                                    <span class="radio-text">Produtos</span>
-                                </label>
-                                <label class="radio-item">
-                                    <input type="radio" name="assunto" value="atendimento" required>
-                                    <span class="radio-text">Atendimento</span>
-                                </label>
-                                <label class="radio-item">
-                                    <input type="radio" name="assunto" value="outros" required>
-                                    <span class="radio-text">Outros</span>
-                                </label>
-                            </div>
-                        </form>
-            
-                        <div class="descripton-text">
-                            <form action="">
-                                <div class="descripton-title">Ajude-nos a melhorar com sua sugestão.</div>
-                                <input type="text" placeholder="Digite sua sugestão aqui..." required>
-                            </form>
-                        </div>
-            
-                    </div>
-            
-                    <div class="dismiss-btn">
-                        <button id="dismiss-popup-btn">
-                            Enviar
-                        </button>
-                    </div>
-            
+        </div>   
+        
+            <div class="d-flex justify-content-evenly flex-wrap">
+                <div class="d-flex flex-column" style="gap: 5px;">
+                    <label for="" class="fs-5 text" >Avalie-nos:</label>
+                    <button type="button" class="btn btn-danger btn btn-primary" style="font-size: 20px; padding: 10px 20px;" data-bs-toggle="modal" data-bs-target="#exampleModal" >Satisfação</button>
                 </div>
-            
-                <div class="center">
-                    <button id="open-popup-btn" class="">
-                        Open popup
-                    </button>
+
+                <div class="d-flex justify-content-evenly flex-wrap">
+                    <div class="d-flex flex-column" style="gap: 5px;">
+                        <label for="" class="fs-5 text" >Deixe sua Sugestão:</label>
+                        <button type="button" class="btn btn-danger btn btn-primary" style="font-size: 20px; padding: 10px 20px;" data-bs-toggle="modal" data-bs-target="#exampleModal2" >Sugestão</button>
+                    </div>
                 </div>
             </div>
-            </form>
+           
+
+            
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" method="post">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Selecione a Categoria:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                      <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Ajude-nos a melhorar com sua satisfaçao:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Enviar Satisfação</button>
+                  </div>
+                </div>
+              </div>
 
             </div>
+        
+            
+
+            
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title-2 fs-5" id="exampleModalLabel">Compartilhe sua sugestão</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Selecione a Categoria:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                      <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Ajude-nos a melhorar com sua sugestão:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Enviar Sugestão</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+        
+
+
+
+
         <!-- Fim  botão-->
         <!-- Inicio Comentarios -->
         <div class="bg-color">
@@ -334,3 +357,4 @@
     </script>
 </body>
 </html>
+
