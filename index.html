@@ -174,36 +174,120 @@
         </div>   
         
             <div class="d-flex justify-content-evenly flex-wrap">
-                <div class="d-flex flex-column" style="gap: 5px;">
+                <div class="d-flex flex-column " style="gap: 5px; ">
                     <label for="" class="fs-5 text" >Avalie-nos:</label>
-                    <button type="button" class="btn btn-danger btn btn-primary" style="font-size: 20px; padding: 10px 20px;" data-bs-toggle="modal" data-bs-target="#exampleModal" >Satisfação</button>
+                    <button type="button" class="btn-satisfacao" style="font-size: 20px; padding: 10px 20px;" data-bs-toggle="modal" data-bs-target="#exampleModal" >Satisfação</button>
                 </div>
 
                 <div class="d-flex justify-content-evenly flex-wrap">
                     <div class="d-flex flex-column" style="gap: 5px;">
                         <label for="" class="fs-5 text" >Deixe sua Sugestão:</label>
-                        <button type="button" class="btn btn-danger btn btn-primary" style="font-size: 20px; padding: 10px 20px;" data-bs-toggle="modal" data-bs-target="#exampleModal2" >Sugestão</button>
+                        <button type="button" class="btn-sugestao" style="font-size: 20px; padding: 10px 20px;" data-bs-toggle="modal" data-bs-target="#exampleModal2" >Sugestão</button>
                     </div>
                 </div>
             </div>
-           
-
+          
             
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" method="post">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                   </div>
                   <div class="modal-body">
                     <form>
+
+                        <label for="recipient-name" class="col-form-label">Qualidade dos produtos:</label>
+                        <div class="mb-3">
+                            <div class="rating">
+                                <input value="5" name="rating" id="star5" type="radio">
+                                <label for="star5"></label>
+                                <input value="4" name="rating" id="star4" type="radio">
+                                <label for="star4"></label>
+                                <input value="3" name="rating" id="star3" type="radio">
+                                <label for="star3"></label>
+                                <input value="2" name="rating" id="star2" type="radio">
+                                <label for="star2"></label>
+                                <input value="1" name="rating" id="star1" type="radio">
+                                <label for="star1"></label>
+                              </div>
+                          </div>
+
+                          <label for="recipient-name" class="col-form-label">Variedade de produtos:</label>
+                          <div class="mb-3">
+                           
+                            <div class="rating">
+                                <input value="5" name="rating" id="star5" type="radio">
+                                <label for="star5"></label>
+                                <input value="4" name="rating" id="star4" type="radio">
+                                <label for="star4"></label>
+                                <input value="3" name="rating" id="star3" type="radio">
+                                <label for="star3"></label>
+                                <input value="2" name="rating" id="star2" type="radio">
+                                <label for="star2"></label>
+                                <input value="1" name="rating" id="star1" type="radio">
+                                <label for="star1"></label>
+                              </div>
+                          </div>
+
+                          
+                          <label for="recipient-name" class="col-form-label">Sustentabilidade:</label>
+                          <div class="mb-3">
+                           
+                            <div class="rating">
+                                <input value="5" name="rating" id="star5" type="radio">
+                                <label for="star5"></label>
+                                <input value="4" name="rating" id="star4" type="radio">
+                                <label for="star4"></label>
+                                <input value="3" name="rating" id="star3" type="radio">
+                                <label for="star3"></label>
+                                <input value="2" name="rating" id="star2" type="radio">
+                                <label for="star2"></label>
+                                <input value="1" name="rating" id="star1" type="radio">
+                                <label for="star1"></label>
+                              </div>
+                          </div>
+      
+                          
+                          <label for="recipient-name" class="col-form-label">Preço:</label>
+                          <div class="mb-3">
+                           
+                            <div class="rating">
+                                <input value="5" name="rating" id="star5" type="radio">
+                                <label for="star5"></label>
+                                <input value="4" name="rating" id="star4" type="radio">
+                                <label for="star4"></label>
+                                <input value="3" name="rating" id="star3" type="radio">
+                                <label for="star3"></label>
+                                <input value="2" name="rating" id="star2" type="radio">
+                                <label for="star2"></label>
+                                <input value="1" name="rating" id="star1" type="radio">
+                                <label for="star1"></label>
+                              </div>
+                          </div>
+      
+                          
+                          <label for="recipient-name" class="col-form-label">Marketing:</label>
+                          <div class="mb-3">
+                           
+                            <div class="rating">
+                                <input value="5" name="rating" id="star5" type="radio">
+                                <label for="star5"></label>
+                                <input value="4" name="rating" id="star4" type="radio">
+                                <label for="star4"></label>
+                                <input value="3" name="rating" id="star3" type="radio">
+                                <label for="star3"></label>
+                                <input value="2" name="rating" id="star2" type="radio">
+                                <label for="star2"></label>
+                                <input value="1" name="rating" id="star1" type="radio">
+                                <label for="star1"></label>
+                              </div>
+                          </div>
+      
+
                       <div class="mb-3">
-                        <label for="recipient-name" class="col-form-label">Selecione a Categoria:</label>
-                        <input type="text" class="form-control" id="recipient-name">
-                      </div>
-                      <div class="mb-3">
-                        <label for="message-text" class="col-form-label">Ajude-nos a melhorar com sua satisfaçao:</label>
+                        <label for="message-text" class="col-form-label">Nosso objetivo é melhorar. Conte-nos como!</label>
                         <textarea class="form-control" id="message-text"></textarea>
                       </div>
                     </form>
@@ -224,14 +308,31 @@
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h1 class="modal-title-2 fs-5" id="exampleModalLabel">Compartilhe sua sugestão</h1>
+                    <h1 class="modal-title-2 fs-5" id="exampleModalLabel"></h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
                   </div>
                   <div class="modal-body">
                     <form>
                       <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">Selecione a Categoria:</label>
-                        <input type="text" class="form-control" id="recipient-name">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked required>
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Produtos
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" required>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Atendimento
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" required>
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Outros
+                            </label>
+                          </div>
                       </div>
                       <div class="mb-3">
                         <label for="message-text" class="col-form-label">Ajude-nos a melhorar com sua sugestão:</label>
