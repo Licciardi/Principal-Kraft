@@ -47,19 +47,27 @@
                      <form action="" class="flip-card__form">
                         <fieldset style="width: 100%;">
                            <div class="d-flex align-itens-start justify-content-start" style="width: 100%;">
-                              <legend for="">Tipo de cliente</legend>
+                              <legend for="">Pessoa</legend>
                            </div>
                            <div class="d-flex justify-content-evenly">
                               <div>
                                  <input type="radio" name="tipo_cliente" id="tipo_pessoa" value="pessoa" class="tipo_cliente" checked>
-                                 <label for="">Pessoa</label>
+                                 <label for="">Física</label>
                               </div>
                               <div>
                                  <input type="radio" name="tipo_cliente" id="tipo_empresa" value="empresa" class="tipo_cliente">
-                                 <label for="">Empresa</label>
+                                 <label for="">Jurídica</label>
                               </div>
                            </div>
                         </fieldset>
+
+                        <fieldset class="none" id="container-cnpj">
+                           <div class="d-flex align-itens-start">
+                              <label for="">CNPJ</label>
+                           </div>
+                           <input type="text" placeholder="CNPJ" class="flip-card__input" name="CNPJ" required>
+                        </fieldset>
+
                         <fieldset>
                            <div class="d-flex align-itens-start">
                               <label for="">Nome</label>
@@ -112,7 +120,7 @@
          </div>
       </div>
    </main>
-   <footer style="height: 30vh;"></footer>
+   <footer style="height: 100vh;"></footer>
    <script src="../JS/login.js"></script>
 </body>
 
