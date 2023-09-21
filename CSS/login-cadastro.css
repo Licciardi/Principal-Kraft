@@ -228,3 +228,8 @@ main {
     color: var(--font-color);
     cursor: pointer;
   } 
+
+  .flip-card__back input, .flip-card__back button,.flip-card__front input, .flip-card__front button,.flip-card__front a,.flip-card__back a{
+    pointer-events: all;
+  }
+  .none{display: none;}
