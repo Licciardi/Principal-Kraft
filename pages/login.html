@@ -62,35 +62,41 @@
                               </div>
                            </div>
                         </fieldset>
-
+                        <fieldset id="container-cpf">
+                           <div class="d-flex align-itens-start">
+                              <label for="">CPF<strong class="fw-semibold text-danger"> (Somente números)</strong></label>
+                           </div>
+                           <input type="text" placeholder="CPF" class="flip-card__input" name="cpf" required maxlength="11">
+                        </fieldset>
+                        <p class="text-danger none" id="msg_cpf_invalido" >CPF inválido</p>
                         <fieldset class="none" id="container-cnpj">
                            <div class="d-flex align-itens-start">
-                              <label for="">CNPJ</label>
+                              <label for="">CNPJ<strong class="fw-semibold text-danger"> (Somente números)</strong></label>
                            </div>
-                           <input type="text" placeholder="CNPJ" class="flip-card__input" name="CNPJ" required>
+                           <input type="text" placeholder="CNPJ" class="flip-card__input" name="cnpj" required>
+                        </fieldset>
+                        <p class="text-danger none" id="msg_cnpj_invalido">CNPJ inválido</p>
+                        <fieldset>
+                           <div class="d-flex align-itens-start">
+                              <label for="">Nome<strong class="fw-semibold text-danger"> (Máx 50 caracteres)</strong></label>
+                           </div>
+                           <input type="text" placeholder="Nome" class="flip-card__input" name="nome" required maxlength="50">
                         </fieldset>
 
                         <fieldset>
                            <div class="d-flex align-itens-start">
-                              <label for="">Nome</label>
-                           </div>
-                           <input type="text" placeholder="Nome" class="flip-card__input" name="nome" required>
-                        </fieldset>
-
-                        <fieldset>
-                           <div class="d-flex align-itens-start">
-                              <label for="">Email</label>
+                              <label for="">Email<strong class="fw-semibold text-danger"> (Máx 50 caracteres)</strong></label>
                            </div>
                            <input type="text"
-                           placeholder="Email" class="flip-card__input" name="login" required >
+                           placeholder="Email" class="flip-card__input" name="login"  maxlength="50" required >
                         </fieldset>
 
                         <fieldset>
                            <div class="d-flex align-itens-start">
-                              <label for="">Telefone</label>
+                              <label for="">Telefone<strong class="fw-semibold text-danger"> (Somente números)</strong></label>
                            </div>
                            <input type="tel"
-                          placeholder="Telefone" name="telefone" class="flip-card__input" required>
+                          placeholder="Telefone" name="telefone" class="flip-card__input" required maxlength="11">
                         </fieldset>
                         <fieldset id="container-data">
                            <div class="d-flex align-itens-start">
@@ -101,17 +107,17 @@
                         </fieldset>
                         <fieldset>
                            <div class="d-flex align-itens-start">
-                              <label for="">Senha</label>
+                              <label for="">Senha<strong class="fw-semibold text-danger"> (Máx 50 caracteres)</strong></label> 
                            </div>
                            <input type="password"
-                          placeholder="Senha" name="senha" class="flip-card__input" required id="senha">
+                          placeholder="Senha" name="senha" class="flip-card__input" required id="senha" maxlength="50">
                         </fieldset>
                         <fieldset>
                            <div class="d-flex align-itens-start">
                               <label for="">Confirmar Senha</label>
                            </div>
                            <input type="password" placeholder="Confirmar senha" name="senha_confirm"
-                              class="flip-card__input" required id="senha_confirm">
+                              class="flip-card__input" required id="senha_confirm" maxlength="50">
                            </fieldset>
                            <p class="text-danger" id="msg_senha_diferente"></p>
                            <button class="flip-card__btn">Criar conta</button>
