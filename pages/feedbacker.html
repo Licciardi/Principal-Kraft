@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback Heinz</title>
+    <link rel="stylesheet" href="../CSS/feedbacker.css">
+</head>
+<body>
+
+    <div class="box">
+        <h1>Filtrar o feedback</h1>
+        <form id="feedbackForm">
+            <div class="form-group">
+                <label for="tipo">Tipo:</label>
+                <select id="tipo" name="tipo">
+                    <option value="">Selecione um tipo</option>
+                    <option value="Tipo 1">Tipo 1</option>
+                    <option value="Tipo 2">Tipo 2</option>
+                    <option value="Tipo 3">Tipo 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="categoria">Categoria:</label>
+                <select id="categoria" name="categoria">
+                    <option value="">Selecione uma categoria</option>
+                    <option value="Categoria 1">Categoria 1</option>
+                    <option value="Categoria 2">Categoria 2</option>
+                    <option value="Categoria 3">Categoria 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="respondido">Respondido:</label>
+                <select id="respondido" name="respondido">
+                    <option value="Sim">Sim</option>
+                    <option value="Não">Não</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" title="Apenas letras e espaços são permitidos">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="id-feedback">ID do Feedback:</label>
+                <input type="text" id="id-feedback" name="id-feedback" inputmode="numeric" pattern="[0-9]*">
+            </div>
+            <button type="submit" class="submitFilter">Filtrar</button>
+        </form>
+    </div>
+    
+    <div class="container">
+         
+        <h2>Avaliação de Feedbacker</h2>
+
+            <label for="resposta">Resposta ao Cliente:</label>
+            <textarea id="resposta" name="resposta" required></textarea>
+            <input type="submit" value="Responder" class="submitAnswer">
+        </form>
+      
+        <a href="http://" class="right-link">Voltar Feedback</a>
+
+    </div>
+
+    <script src="../JS/feedbacker.js"></script>
+    
+</body>
+</html>
